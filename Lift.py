@@ -11,7 +11,7 @@ random_lift = random.randint(0,2)
 lift_sent = 0
 diff = [abs(lifts[0]-button), abs(lifts[1]-button), abs(lifts[2]-button)]
 
-#Comparing them
+#Comparing the variables and conditions
 if diff[0]>diff[1] and weights[1]<550:
     lifts[1] = button
     weights[1] = random.randint(25,120)
@@ -28,8 +28,7 @@ elif diff[1]>diff[0] and weights[0]<550:
     lift_sent = "number 1"
     print("Lift 1 is coming for you. Please wait.")
 
-#The else statement here helps to choose a lift in-case any two lifts 
-#are in the same situation, like, having same floor and/or and weights
+#The else statement here helps to choose a lift in-case any two lifts are in the same situation, like, having same floor and/or and weights
 else:
     lifts[random_lift] = button
     weights[random_lift] = random.randint(25,120)
