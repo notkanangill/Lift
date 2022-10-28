@@ -3,7 +3,7 @@ import random
 #The code below is to ensure that the values remain same over different executions.
 random.seed(0)
 
-#Iintialising variables
+#Iintialising lift and weight variables:
 lifts = [random.randint(-2,50), random.randint(-2,50), random.randint(-2,50)]
 weights = [random.randint(25,500), random.randint(25,500), random.randint(25,500)]
 button = int(input())
@@ -41,6 +41,6 @@ print("------Below are some useful data------")
 print("Lifts' current floor: ",lifts)
 print("Lifts' current weight: ", weights)
 print("Your current floor: ", button)
-print("Random lift number is: ", random_lift)
-print("closest lift values are: ", diff)
-print("The lift sent if :", lift_sent)
+print("Random lift number: ", random_lift)
+print("closest lift: ", diff)
+print("The lift sent:", lift_sent)
