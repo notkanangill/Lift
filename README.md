@@ -8,3 +8,4 @@ It selects the lift closest to your current floor for lesser waiting time and en
 It also check whether the weight limit has already exceeded before selecting a lift.
 
 The program assumes there are 3 lifts
+PS : Need contributions for more lifts. feel free to add your PR
